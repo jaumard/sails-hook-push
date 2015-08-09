@@ -1,7 +1,7 @@
 {
   "name"        : "sails-hook-push",
-  "version"     : "0.0.1",
-  "description": "BETA Implement push notification for Android (gcm) and iOS (apn)",
+  "version"     : "0.0.2",
+  "description" : "BETA Implement push notification for Android/iOS (GCM) and iOS (APN)",
   "main"        : "index.js",
   "scripts"     : {
     "postinstall": "node scripts/install.js"
