@@ -1,0 +1,37 @@
+{
+  "name"           : "sails-hook-push",
+  "version"        : "0.0.1",
+  "description"    : "Implement push notification for Android (gcm) and iOS (apn)",
+  "main"           : "index.js",
+  "scripts"        : {
+	"postinstall": "node scripts/install.js"
+  },
+  "license"        : "MIT",
+  "dependencies"   : {
+	"apn"                  : "^1.7.4",
+	"fs-extra"             : "^0.22.1",
+	"node-gcm"             : "^0.11.0",
+	"sails-util-mvcsloader": "~0.3.0"
+  },
+  "devDependencies": {},
+  "repository"     : {
+	"type": "git",
+	"url" : "https://github.com/jaumard/sails-hook-push.git"
+  },
+  "keywords"       : [
+	"sails",
+	"sails-hook",
+	"push",
+	"notification",
+	"gcm",
+	"apn"
+  ],
+  "author"         : "Aumard Jimmy",
+  "bugs"           : {
+	"url": "https://github.com/jaumard/sails-hook-push/issues"
+  },
+  "homepage"       : "https://github.com/jaumard/sails-hook-push",
+  "sails"          : {
+	"isHook": true
+  }
+}
