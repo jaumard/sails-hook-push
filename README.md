@@ -5,6 +5,37 @@ Base on node-gcm and apn modules.
 ## Install : 
 
     npm install sails-hook-push
+
+## Configuration :
+You need a /config/push.js file under your sails project to configure your apis credential like this : 
+
+    module.exports.push = {
+    	gcm : {
+    		senderId : "" //Server API key
+    	},
+    	apn : {
+    		cert : "", //Path to cert file
+    		key  : "", //Path to key file
+    		/*
+    		 ca         : [],
+    		 pfx        : "",
+    		 passphrase : "",
+    		 production : NODE_ENV == "production",
+    		 voip : false,
+    		 port : 2195,
+    		 rejectUnauthorized : true,
+    		 cacheLength : 1000,
+    		 autoAdjustCache : true,
+    		 maxConnections : 1,
+    		 connectTimeout : 10000,
+    		 connectionTimeout : 3600000,
+    		 connectionRetryLimit : 10,
+    		 buffersNotifications : true,
+    		 fastMode : false
+    		 //more infos here : https://github.com/argon/node-apn/blob/master/doc/connection.markdown
+    		 */
+    	}
+    };
     
 ## Usage : 
 After install a new service is available. You can send GCM message/notification like this : 
